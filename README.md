@@ -12,15 +12,6 @@ Com o CloudFormation, é possível provisionar, de forma automatizada e reprodut
 - Security Groups  
 - IAM Roles e Policies  
 
-# Dicas de Utilização do CloudFormation
-
-- Organize seus templates por recurso ou ambiente (ex.: network.yml, storage.yml, compute.yml).
-- Evite alterações manuais em recursos criados por CloudFormation — modifique o template e atualize a stack.
-- Use parâmetros (Parameters) para tornar seus templates reutilizáveis entre ambientes.
-- Documente cada recurso com descrições (Description) para facilitar a manutenção.
-- Controle permissões: garanta que seu usuário possua políticas IAM adequadas para criar os recursos desejados.
-- Verifique dependências usando a aba Events no console do CloudFormation — ela mostra o que falhou e por quê.
-
 ## Etapas da Criação da Stack
 
 Durante o laboratório, o processo de criação da minha Stack seguiu os seguintes passos:
@@ -39,3 +30,12 @@ Após criar a Stack, acompanhei o status em Events, onde cada recurso é listado
 
 5. **Verificação dos recursos**
 Confirmei que o bucket havia sido criado com o nome definido e que o versionamento estava habilitado, conforme configurado no template.
+
+## Dicas de Utilização do CloudFormation
+
+- Organize seus templates por recurso ou ambiente (ex.: network.yml, storage.yml, compute.yml).
+- Evite alterações manuais em recursos criados por CloudFormation — modifique o template e atualize a stack.
+- Use parâmetros (Parameters) para tornar seus templates reutilizáveis entre ambientes.
+- Documente cada recurso com descrições (Description) para facilitar a manutenção.
+- Controle permissões: garanta que seu usuário possua políticas IAM adequadas para criar os recursos desejados.
+- Verifique dependências usando a aba Events no console do CloudFormation — ela mostra o que falhou e por quê.
